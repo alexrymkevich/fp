@@ -1,14 +1,18 @@
 # rymkevich_fp_1
 
-A Clojure library designed to ... well, that part is up to you.
+Clusters
 
 ## Usage
 
-FIXME
+(-main fileName distanceMethod)
+
+distanceMethod :
+1) h = hamming;
+2) e = euclidian;
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
