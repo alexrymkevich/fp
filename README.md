@@ -8,7 +8,7 @@ Clusters
 
 distanceMethod :
 1) h = hamming;
-2) e = euclidian;
+2) e = euclidean;
 
 ## License
 

@@ -15,11 +15,11 @@
 
 
 
-(deftest euclidian-distance-test
-  (testing "euclidian function doesn't work"
-(is (= 0 (rymkevich-fp-1.core/euclidian-distance [2,2] [2,2])))
-(is (= 50 (rymkevich-fp-1.core/euclidian-distance [0,0] [5,5])))
-(is (= 74 (rymkevich-fp-1.core/euclidian-distance [0,0,0] [5,5,5])))
+(deftest euclidean-distance-test
+  (testing "euclidean function doesn't work"
+(is (= 0 (rymkevich-fp-1.core/euclidean-distance [2,2] [2,2])))
+(is (= 50 (rymkevich-fp-1.core/euclidean-distance [0,0] [5,5])))
+(is (= 74 (rymkevich-fp-1.core/euclidean-distance [0,0,0] [5,5,5])))
 ))
 
 (deftest hamming-distance-test
@@ -29,5 +29,5 @@
 (is (= 3 (rymkevich-fp-1.core/hamming-distance [0,0,0] [1,1,1])))
 ))
 
-(euclidian-distance-test)
+(euclidean-distance-test)
 (hamming-distance-test)

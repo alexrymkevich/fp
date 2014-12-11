@@ -38,7 +38,7 @@
 
 
 ;function distance
-(defn euclidian-distance
+(defn euclidean-distance
   [c1 c2]
   ( reduce + (map sqr  (map - c1 c2) )))
 
@@ -92,13 +92,13 @@
 ; MAIN FUNCTION
 (defn -main [fileName distanceMethod]
   (let [points (read-coordinates-from-file fileName)
-        distance (if (= distanceMethod "h") hamming-distance euclidian-distance)]
+        distance (if (= distanceMethod "h") hamming-distance euclidean-distance)]
  (process points distance)))
 
 
 ; FOR DEBUG
 
-;(-main "c:/Users/Alex/Downloads/clojure-1.6.0/rymkevich_fp_1/src/rymkevich_fp_1/butterfly.txt" "h")
+(-main "c:/Users/Alex/Downloads/clojure-1.6.0/rymkevich_fp_1/src/rymkevich_fp_1/glass.txt" "e")
 
 ; (read-coordinates-from-file "c:/Users/Alex/Downloads/clojure-1.6.0/rymkevich_fp_1/src/rymkevich_fp_1/butterfly.txt")
 
